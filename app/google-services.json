@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "839610803615",
+    "project_id": "backtonokia-2021",
+    "storage_bucket": "backtonokia-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839610803615:android:a5afcfaa8374d800d209aa",
+        "android_client_info": {
+          "package_name": "it.polito.mad.backToNokia.carpooling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839610803615-g68b846u7djh6vhe8be0k48asfjp4kld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.polito.mad.backToNokia.carpooling",
+            "certificate_hash": "37082357198a0e34c7ec579ea69ddf6777d77024"
+          }
+        },
+        {
+          "client_id": "839610803615-h3qpoi7i285qicb21knf1pftt6qjebdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdZfiwxUg8WiAc7Ro9jXtbXOeinrpXK68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839610803615-h3qpoi7i285qicb21knf1pftt6qjebdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
