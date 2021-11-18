@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/username_to_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rate"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/blue_darker"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_user_to_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        tools:srcCompat="@drawable/user_icon"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <RatingBar
+        style="@style/Widget.AppCompat.RatingBar"
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:progressTint="@color/ciano"
+        />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/add_comment"
+        android:layout_marginTop="16dp"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:maxLines="10" />
+
+
+</LinearLayout>

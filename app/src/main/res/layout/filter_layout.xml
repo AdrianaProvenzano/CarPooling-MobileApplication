@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <ImageView
+        android:src="@drawable/search_icon"
+        app:tint="@color/blue_darker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:scaleType="center"
+        android:background="@color/ciano" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/filter_departure_location"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/departure_location" />
+            <EditText
+                android:id="@+id/filter_arrival_location"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/arrival_location" />
+            <EditText
+                android:id="@+id/filter_departure_date"
+                android:inputType="date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/departure_date" />
+            <EditText
+                android:id="@+id/filter_departure_time"
+                android:inputType="time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/departure_time" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/filter_seats"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="4dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/seats"
+                    android:inputType="number" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/slider_seats"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:paddingStart="20dp"
+                    android:valueFrom="0"
+                    android:valueTo="10"
+                    android:value="0"
+                    android:stepSize="1"
+                    app:trackHeight="2dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/filter_price"
+                    android:inputType="numberDecimal"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/price"/>
+
+                <com.google.android.material.slider.RangeSlider
+                    android:id="@+id/slider_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    app:values="@array/initial_range_slider_values"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"
+                    android:stepSize="5.0"
+                    app:trackHeight="2dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
